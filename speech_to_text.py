@@ -16,12 +16,6 @@ class AudioTranscriber:
     def transcribe(self, audio_file_path):
         """
         Transcribes the given audio file using OpenAI's Whisper model.
-        
-        Args:
-            audio_file_path (str): Path to the audio file
-            
-        Returns:
-            str: Transcribed text or None if failed
         """
         # Check if the file exists
         if not os.path.isfile(audio_file_path):
@@ -49,7 +43,7 @@ def transcribe_audio_file(audio_file_path, model_size="medium"):
 
 if __name__ == "__main__":
     # Example usage
-    audio_file = r"C:\durgesh3.wav"  # Replace with your audio file path
+    audio_file = r"Audio File Path here"  # Replace with your audio file path
     
     # Using the helper function
     transcription = transcribe_audio_file(audio_file)
